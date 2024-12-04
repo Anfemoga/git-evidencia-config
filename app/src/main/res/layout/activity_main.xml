@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/gris"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_edittext"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/Id_TvDatosDelPedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/Tv_DatosDelPedido"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/Id_ImgArrozChino"
+                android:layout_width="175dp"
+                android:layout_height="115dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="2dp"
+                android:contentDescription="@string/Img_ArrozChino"
+                app:layout_constraintEnd_toStartOf="@+id/id_ImgLogoRestaurante"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Id_TvDatosDelPedido"
+                tools:srcCompat="@drawable/arroz_chino" />
+
+            <ImageView
+                android:id="@+id/id_ImgLogoRestaurante"
+                android:layout_width="175dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="2dp"
+                android:contentDescription="@string/Img_Logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Id_TvDatosDelPedido"
+                tools:srcCompat="@drawable/logo_saz_n_chen_2" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="@color/gris"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Id_ImgArrozChino">
+
+                <TextView
+                    android:id="@+id/id_TvTipoArroz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/Tv_TipoDeArroz"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/id_TvTamañoArroz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/Tv_TamañoDeArroz"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/id_TvContieneArroz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="45dp"
+                    android:text="@string/Tv_ContieneElArroz"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/id_TvServicioDomicilio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="65dp"
+                    android:text="@string/Tv_ServicioDeDomicilio"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/id_IconoCarritoCompras"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_margin="20dp"
+                    android:contentDescription="@string/Icono_CarritoCompras"
+                    tools:srcCompat="@drawable/baseline_shopping_cart_24" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/id_TvInfVTPagar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="85dp"
+                android:text="@string/Tv_InfVTPagar"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/id_TvPrecioPagar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+            <TextView
+                android:id="@+id/id_TvPrecioPagar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="100dp"
+                android:text="@string/Tv_PrecioPagar"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+            <ImageView
+                android:id="@+id/id_ImgLocalizacionCasa"
+                android:layout_width="79dp"
+                android:layout_height="68dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/Img_LocalizacionCasa"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/id_TvInfVTPagar"
+                tools:srcCompat="@drawable/baseline_maps_home_work_24" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="@color/gris"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/id_ImgLocalizacionCasa">
+
+                <TextView
+                    android:id="@+id/id_TvBarrio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:text="@string/Tv_Barrio" />
+
+                <TextView
+                    android:id="@+id/id_TvDireccion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="25dp"
+                    android:textStyle="bold"
+                    android:text="@string/Tv_Direccion" />
+
+                <TextView
+                    android:id="@+id/id_TvNumeroContacto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="45dp"
+                    android:textStyle="bold"
+                    android:text="@string/Tv_NumeroContacto" />
+
+                <TextView
+                    android:id="@+id/id_NombreContacto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="65dp"
+                    android:layout_marginBottom="15dp"
+                    android:textStyle="bold"
+                    android:text="@string/Tv_NombreContacto" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/id_BtnConfirmarPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="111dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="111dp"
+                android:text="@string/Btn_ConfirmarPedido"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+            <Button
+                android:id="@+id/id_BtnCancelarPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="114dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="115dp"
+                android:text="@string/Btn_CancelarPedido"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/id_BtnConfirmarPedido" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="62dp"
+            android:layout_gravity="bottom"
+            android:background="@color/red1"
+            app:itemIconSize="24dp"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:menu="@menu/bottom_nav_menu" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

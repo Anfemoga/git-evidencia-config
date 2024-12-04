@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">PedidoCompleto</string>
+    <string name="title_home">Regresar</string>
+    <string name="title_dashboard">Inicio</string>
+    <string name="title_notifications">Continuar</string>
+    <string name="Tv_DatosDelPedido">DATOS DEL PEDIDO</string>
+    <string name="Img_ArrozChino">Arroz Chino</string>
+    <string name="Img_Logo">Logo Restaurante</string>
+    <string name="Tv_TipoDeArroz">ARROZ CHINO NEGRO</string>
+    <string name="Tv_TamañoDeArroz">1 CAJA GRANDE</string>
+    <string name="Tv_ContieneElArroz">1 POLLO ENTERO</string>
+    <string name="Tv_ServicioDeDomicilio">SERVICIO DE DOMICILIO</string>
+    <string name="Tv_InfVTPagar">Valor Total a Pagar</string>
+    <string name="Tv_PrecioPagar">$ 53.000</string>
+    <string name="Tv_Barrio">BARRIO: VILLA MARÍA</string>
+    <string name="Tv_Direccion">DIRECCIÓN: MANZANA 3 CASA 8</string>
+    <string name="Tv_NumeroContacto">NÚMERO DE CONTACTO: 3053033030</string>
+    <string name="Tv_NombreContacto">NOMBRE DE CONTACTO: PEPITO PEREZ</string>
+    <string name="Btn_ConfirmarPedido">CONFIRMAR PEDIDO</string>
+    <string name="Btn_CancelarPedido">CANCELAR PEDIDO</string>
+    <string name="Icono_CarritoCompras">IconoCarrito de compras</string>
+    <string name="Img_LocalizacionCasa">Icono Localización Casa</string>
+</resources>
